@@ -250,20 +250,23 @@ img {
   fill: var(--color-icon);
 }
 .album-icon-item {
+  width: 44px;
+  height: 44px;
+}
+.album-icon-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  fill: var(--color-white);
 }
-.album-icon-item:hover,
-.album-icon-item:focus {
+.album-icon-item .album-icon-link:hover,
+.album-icon-item .album-icon-link:focus {
   background-color: var(--color-blue);
 }
-.album-icon-item:hover .icon,
-.album-icon-item:focus .icon {
+.album-icon-link:hover .icon,
+.album-icon-link:focus .icon {
   fill: var(--color-white);
 }
 .album-icons-list {
@@ -312,11 +315,17 @@ img {
   text-align: center;
 }
 .client-item {
-  display: flex;
   align-items: center;
   justify-content: center;
   width: 170px;
   height: 81px;
+}
+.client-list-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   border: 1px solid var(--color-box);
 }
 .client-list-logo .icon {
@@ -324,13 +333,13 @@ img {
   height: 52px;
   fill: var(--color-icon);
 }
-.client-item:hover .icon,
-.client-item:focus .icon {
+.client-list-logo:hover .icon,
+.client-list-logo:focus .icon {
   fill: var(--color-blue);
 }
 
-.client-item:hover,
-.client-item:focus {
+.client-list-logo:hover,
+.client-list-logo:focus {
   border: 1px solid var(--color-blue);
   cursor: pointer;
 }
@@ -385,15 +394,22 @@ img {
   height: 20px;
   fill: var(--color-white);
 }
-.footbar-icon-item {
+.footbar-icon-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footbar-icon-item {
   width: 44px;
   height: 44px;
   border-radius: 50%;
 
-  background-color: rgba(255, 255, 255, 0.1);
+  
 }
 .footbar-icon-list {
   margin-top: 20px;
@@ -408,8 +424,8 @@ img {
   margin-left: 70px;
   width: 206px;
 }
-.footbar-icon-item:hover,
-.footbar-icon-item:focus {
+.footbar-icon-link:hover,
+.footbar-icon-link:focus {
   background-color: var(--color-blue);
 }
 
